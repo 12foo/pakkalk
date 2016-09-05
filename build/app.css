@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  background-color: #eee;
+}
+div.app {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+div.app .topbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: url("img/ldlogo.png") left center/100px no-repeat #b30000;
+}
+div.app .topbar h1 {
+  line-height: 60px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 100px;
+}
+div.app div.spacer {
+  height: 60px;
+}
+div.app div.card {
+  background-color: #fff;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 12pt;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 0px #ddd;
+}
+div.app div.card div.input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+div.app div.card div.input label {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3rem;
+}
+div.app div.card div.input label.inset {
+  width: 2rem;
+  margin-left: -2rem;
+  text-align: right;
+}
+div.app div.card div.input input {
+  font-size: 1.3rem;
+  font-family: monospace;
+  padding: 5px;
+  width: 55%;
+  border: none;
+  border-bottom: 2px solid #b30000;
+  outline: none;
+}
+div.app div.card div.input input:focus {
+  outline: none;
+}
+div.app div.card div.tapper {
+  padding: 0px;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+div.app div.card div.tapper > div {
+  height: 3.5rem;
+  padding: 0px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+div.app div.card div.tapper > div label {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+div.app div.card div.tapper > div div.packs {
+  font-size: 2rem;
+  font-family: monospace;
+}
+div.app div.card div.tapper > div button {
+  background-color: #b30000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+}
+div.app div.card div.tapper > div button.disabled {
+  background-color: #ddd;
+}
+div.app div.card div.stats {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-top: 1px solid #666;
+  margin-top: 0.1rem;
+  border-collapse: collapse;
+}
+div.app div.card div.stats > div {
+  display: table-cell;
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+div.app div.card div.stats > div div.cbox {
+  border-radius: 3px;
+  margin-top: 0.2rem;
+}
+div.app div.card div.stats > div div.cbox.green {
+  background: #64e986;
+}
+div.app div.card div.stats > div div.cbox.yellow {
+  background: #ffdb58;
+}
+div.app div.card div.stats > div div.cbox.red {
+  background: #f75d59;
+}
+div.app div.card table {
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: left;
+  vertical-align: middle;
+}
+div.app div.card table th {
+  padding: 0.1rem;
+  font-weight: bold;
+}
+div.app div.card table td {
+  padding: 0.1rem;
+  font-family: monospace;
+}
+div.app div.card table span {
+  font-size: 0.8em;
+  color: #999;
+}
+div.app div.card table .right {
+  text-align: right;
+}
+div.app div.card table tbody tr {
+  border-top: 1px solid #000;
+}
+div.app div.card table tbody tr.selected {
+  background-color: #fdd;
+}
+div.app div.results {
+  position: fixed;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  box-shadow: 0px -2px -3px 0px #ddd;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3rem;
+  display: table;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
+}
+div.app div.results > div {
+  display: table-cell;
+  text-align: center;
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+div.app div.results > div label {
+  position: absolute;
+  padding-top: 0.2rem;
+  bottom: -0.3rem;
+  font-size: 0.8rem;
+  border-top: 1px solid #000;
+  width: 100%;
+  display: block;
+}
+div.app div.results > div div.result {
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+div.app div.results div.reset {
+  width: 3rem;
+}
+div.app div.results div.reset button {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.5rem;
+  background-color: #b30000;
+  border-radius: 1.2rem;
+  border: 2px solid #f99;
+  color: #fff;
+  font-weight: bold;
+}
